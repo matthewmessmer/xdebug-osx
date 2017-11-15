@@ -65,6 +65,7 @@ if keg_exists; then
                     echo "Xdebug has been $STATUS, restarting $SERVER_NAME"
 
                     brew services restart php"${php_version}"
+                    brew services restart httpd
                 else
                     echo ""
                     echo "Xdebug has been $STATUS, restarting $SERVER_NAME (it might ask for your password)"
